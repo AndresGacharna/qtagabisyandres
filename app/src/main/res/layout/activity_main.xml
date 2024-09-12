@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="360dp"
+            android:layout_height="59dp"
+            android:layout_margin="6dp"
+            android:background="#C00016"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="4dp"
+                android:text="Simuladores"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="215dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="20dp"
+            android:text="Crédito Hipotecario en Colombia"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/propiedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:text="* Valor de la propiedad"
+            android:textColor="#C00016"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/valor_propiedad"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/propiedad"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/parrafo1"
+            android:layout_width="305dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="El valor de la propiedad no puede ser inferior a $70.000.000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valor_propiedad" />
+
+        <TextView
+            android:id="@+id/efectiva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:text="* ¿A qué tasa de interés efectiva anual (TAE)?"
+            android:textColor="#C00016"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parrafo1" />
+
+        <EditText
+            android:id="@+id/tasa_interes"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/efectiva"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/parrafo3"
+            android:layout_width="326dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Van desde los 5 hasta los 20 años. El plazo más común es de 20 años."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tasa_interes" />
+
+        <TextView
+            android:id="@+id/credito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:text="* ¿A qué plazo necesitas el crédito (años)?"
+            android:textColor="#C00016"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parrafo3" />
+
+        <EditText
+            android:id="@+id/plazo_credito"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/credito"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/parrafo4"
+            android:layout_width="313dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Esta tasa depende de tu historial crediticio y del banco en el que pidas el credito."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plazo_credito" />
+
+        <TextView
+            android:id="@+id/necesitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:text="* ¿Cuánto necesitas?"
+            android:textColor="#C00016"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parrafo4" />
+
+        <EditText
+            android:id="@+id/cuanto_necesitas"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/necesitas"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/parrafo2"
+            android:layout_width="310dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="El préstamo mínimo es de $50.000 y no puede exceder el 70% del valor de la propiedad para créditos hipotecarios, mientras que para leasing habitacional no puede exceder el 80% del valor de la propiedad."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cuanto_necesitas" />
+
+        <Button
+            android:id="@+id/boton_simular"
+            android:layout_width="297dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#C00016"
+            android:text="Simular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parrafo2" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boton_simular" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
